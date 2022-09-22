@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="Flipkart.com.Listeners.Listeners"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Flipkart.com.Testcases.TestCase2">
+        <methods>
+          <include name="initiateBrowser"/>
+          <include name="AddCart"/>
+        </methods>
+      </class> <!-- Flipkart.com.Testcases.TestCase2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

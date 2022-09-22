@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="23102" started-at="2022-09-21T05:47:43Z" finished-at="2022-09-21T05:48:06Z">
+    <groups>
+      <group name="Smoke">
+        <method signature="TestCase2.AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@49d904ec]" name="AddCart" class="Flipkart.com.Testcases.TestCase2"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Test" duration-ms="22515" started-at="2022-09-21T05:47:43Z" finished-at="2022-09-21T05:48:06Z">
+      <class name="Flipkart.com.Testcases.TestCase2">
+        <test-method status="PASS" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@49d904ec]" name="initiateBrowser" is-config="true" duration-ms="11989" started-at="2022-09-21T11:17:43Z" finished-at="2022-09-21T11:17:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@49d904ec]" name="AddCart" duration-ms="8804" started-at="2022-09-21T11:17:55Z" finished-at="2022-09-21T11:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCart -->
+      </class> <!-- Flipkart.com.Testcases.TestCase2 -->
+    </test> <!-- Test -->
+    <test name="Test2" duration-ms="1" started-at="2022-09-21T05:48:06Z" finished-at="2022-09-21T05:48:06Z">
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

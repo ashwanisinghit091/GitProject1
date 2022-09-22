@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-21T08:40:48Z" name="Suite" finished-at="2022-09-21T08:43:05Z" duration-ms="137146">
+    <groups>
+      <group name="Smoke">
+        <method signature="TestCase1.LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@2d9caaeb]" name="LoginFinctionality" class="Flipkart.com.Testcases.TestCase1"/>
+        <method signature="TestCase2.AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@658c5a19]" name="AddCart" class="Flipkart.com.Testcases.TestCase2"/>
+        <method signature="TestCase1.LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@5495333e]" name="LoginFinctionality" class="Flipkart.com.Testcases.TestCase1"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-09-21T08:40:48Z" name="Test3" finished-at="2022-09-21T08:41:50Z" duration-ms="62429">
+      <class name="Flipkart.com.Testcases.TestCase1">
+        <test-method is-config="true" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@2d9caaeb]" started-at="2022-09-21T14:11:10Z" name="initiateBrowser" finished-at="2022-09-21T14:11:42Z" duration-ms="32443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method signature="LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@2d9caaeb]" started-at="2022-09-21T14:11:42Z" name="LoginFinctionality" finished-at="2022-09-21T14:11:50Z" duration-ms="7648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFinctionality -->
+      </class> <!-- Flipkart.com.Testcases.TestCase1 -->
+      <class name="Flipkart.com.Testcases.TestCase2">
+        <test-method is-config="true" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@658c5a19]" started-at="2022-09-21T14:10:48Z" name="initiateBrowser" finished-at="2022-09-21T14:10:59Z" duration-ms="11289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method signature="AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@658c5a19]" started-at="2022-09-21T14:10:59Z" name="AddCart" finished-at="2022-09-21T14:11:08Z" duration-ms="8618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCart -->
+      </class> <!-- Flipkart.com.Testcases.TestCase2 -->
+    </test> <!-- Test3 -->
+    <test started-at="2022-09-21T08:42:06Z" name="Test4" finished-at="2022-09-21T08:43:05Z" duration-ms="59100">
+      <class name="Flipkart.com.Testcases.TestCase1">
+        <test-method is-config="true" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@5495333e]" started-at="2022-09-21T14:12:06Z" name="initiateBrowser" finished-at="2022-09-21T14:12:59Z" duration-ms="53350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method signature="LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@5495333e]" started-at="2022-09-21T14:12:59Z" name="LoginFinctionality" finished-at="2022-09-21T14:13:04Z" duration-ms="5017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFinctionality -->
+      </class> <!-- Flipkart.com.Testcases.TestCase1 -->
+    </test> <!-- Test4 -->
+  </suite> <!-- Suite -->
+</testng-results>
