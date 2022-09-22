@@ -25,7 +25,7 @@ public class BaseTest {
 	
 	
 	public static WebDriver driver;
-	//static String  drivername;
+
 	
 	
 	
@@ -35,8 +35,11 @@ public WebDriver invokeBrowser() throws IOException{
 	FileInputStream f=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/DataResources/Platform.properties");
 Properties p=new Properties();
 p.load(f);
-String drivername=p.getProperty("Browser");
-
+System.out.println(System.getProperty("Browser"));
+String drivername=System.getProperty("Browser")!=null?System.getProperty("Browser"):p.getProperty("Browser");
+System.out.println(drivername);
+//drivername="EDGEDRIVER";
+System.out.println(drivername);
 if(drivername.equalsIgnoreCase("CHROME")) {
 	System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
 	driver=new ChromeDriver();
@@ -54,7 +57,7 @@ if(drivername.equalsIgnoreCase("CHROME")) {
 
 
 if(drivername.equalsIgnoreCase("EDGEDRIVER")) {
-	System.setProperty("webdriver.edgedriver.driver", "E:\\chromedriver.exe");
+	System.setProperty("webdriver.edge.driver", "E:\\msedgedriver.exe");
 	driver=new EdgeDriver();
 driver.get("https://www.flipkart.com/");
 driver.manage().window().maximize();

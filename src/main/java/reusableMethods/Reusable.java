@@ -1,4 +1,4 @@
-package Flipkart.com.Testcases;
+package reusableMethods;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -9,8 +9,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.Properties;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,7 +29,7 @@ public class Reusable {
 	String filePath;
 String	imagePath;
 FileOutputStream fo;
-	
+String cellValue;
 	
 	public void robot() throws AWTException, IOException {
 		
@@ -62,5 +67,32 @@ FileOutputStream fo;
 		
 		Assert.assertNotNull(fo);
 		
+	}
+	
+	//Method need to be change as per the columns in Excel sheet
+	public Object ExtractDataFromExcel() throws IOException {
+		FileInputStream fs=new FileInputStream("");
+		XSSFWorkbook xs=new XSSFWorkbook(fs);
+	
+		for(int i=0;i<xs.getNumberOfSheets();i++) {
+			xs.getSheetName(i);
+if(	xs.getSheetName(i).equalsIgnoreCase("")) {
+	XSSFSheet xsf=xs.getSheetAt(i);
+
+	
+Iterator<Row> it1=	xsf.iterator();
+Row Firstrow= it1.next();
+Iterator<Cell> it=Firstrow.iterator();
+while(it.hasNext()) {
+	cellValue=it.next().getStringCellValue();
+}
+
+}
+	
+	
+}
+		
+		
+		return cellValue;
 	}
 }
