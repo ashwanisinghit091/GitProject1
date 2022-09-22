@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Command line suite]">
-  <test name="Command line test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
+  <listeners>
+    <listener class-name="Flipkart.com.Listeners.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Test(failed)">
     <classes>
       <class name="Flipkart.com.Testcases.TestCase2">
         <methods>
-          <include name="SearchMob"/>
+          <include name="closeBrowser"/>
           <include name="initiateBrowser"/>
+          <include name="AddCart"/>
           <include name="clickElectronic"/>
         </methods>
       </class> <!-- Flipkart.com.Testcases.TestCase2 -->
       <class name="Flipkart.com.Testcases.TestCase1">
         <methods>
           <include name="initiateBrowser"/>
+          <include name="initiateBrowser"/>
+          <include name="closeBrowser"/>
           <include name="SearchProduct" invocation-numbers="0"/>
         </methods>
       </class> <!-- Flipkart.com.Testcases.TestCase1 -->
     </classes>
-  </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [Command line suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

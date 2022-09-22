@@ -1,26 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23102" started-at="2022-09-21T05:47:43Z" finished-at="2022-09-21T05:48:06Z">
+  <suite name="Default suite" duration-ms="82318" started-at="2022-09-22T14:41:01Z" finished-at="2022-09-22T14:42:23Z">
     <groups>
       <group name="Smoke">
-        <method signature="TestCase2.AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@49d904ec]" name="AddCart" class="Flipkart.com.Testcases.TestCase2"/>
+        <method signature="TestCase1.LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@3e2e18f2]" name="LoginFinctionality" class="Flipkart.com.Testcases.TestCase1"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="22515" started-at="2022-09-21T05:47:43Z" finished-at="2022-09-21T05:48:06Z">
-      <class name="Flipkart.com.Testcases.TestCase2">
-        <test-method status="PASS" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@49d904ec]" name="initiateBrowser" is-config="true" duration-ms="11989" started-at="2022-09-21T11:17:43Z" finished-at="2022-09-21T11:17:55Z">
+    <test name="Default test" duration-ms="82318" started-at="2022-09-22T14:41:01Z" finished-at="2022-09-22T14:42:23Z">
+      <class name="Flipkart.com.Testcases.TestCase1">
+        <test-method status="PASS" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@3e2e18f2]" name="initiateBrowser" is-config="true" duration-ms="47585" started-at="2022-09-22T20:11:01Z" finished-at="2022-09-22T20:11:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@49d904ec]" name="AddCart" duration-ms="8804" started-at="2022-09-21T11:17:55Z" finished-at="2022-09-21T11:18:04Z">
+        <test-method status="PASS" signature="LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@3e2e18f2]" name="LoginFinctionality" duration-ms="5953" started-at="2022-09-22T20:11:48Z" finished-at="2022-09-22T20:11:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddCart -->
-      </class> <!-- Flipkart.com.Testcases.TestCase2 -->
-    </test> <!-- Test -->
-    <test name="Test2" duration-ms="1" started-at="2022-09-21T05:48:06Z" finished-at="2022-09-21T05:48:06Z">
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- LoginFinctionality -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@3e2e18f2]" name="closeBrowser" is-config="true" duration-ms="1386" started-at="2022-09-22T20:11:54Z" finished-at="2022-09-22T20:11:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@3e2e18f2]" name="initiateBrowser" is-config="true" duration-ms="15707" started-at="2022-09-22T20:11:56Z" finished-at="2022-09-22T20:12:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="FAIL" signature="SearchProduct(java.util.HashMap)[pri:0, instance:Flipkart.com.Testcases.TestCase1@3e2e18f2]" name="SearchProduct" duration-ms="11121" started-at="2022-09-22T20:12:12Z" data-provider="getJasonData" finished-at="2022-09-22T20:12:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ProductName=Parmal Rice (Long Grain), Product=Rice, Quantity=5}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[class="_166SQN"]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e78e6edc44c1173e9da9b4329fbb7e3b
+*** Element info: {Using=css selector, value=input[class="_166SQN"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[class="_166SQN"]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e78e6edc44c1173e9da9b4329fbb7e3b
+*** Element info: {Using=css selector, value=input[class="_166SQN"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at flipkart_WebPages.GroceryWebPage.pincode(GroceryWebPage.java:53)
+	at Flipkart.com.Testcases.TestCase1.SearchProduct(TestCase1.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchProduct -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@3e2e18f2]" name="closeBrowser" is-config="true" duration-ms="104" started-at="2022-09-22T20:12:23Z" finished-at="2022-09-22T20:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Flipkart.com.Testcases.TestCase1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

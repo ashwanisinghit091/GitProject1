@@ -45,7 +45,7 @@ ThreadLocal<ExtentTest> th;
 		try {
 			
 			
-			System.out.println("I am listener");
+		
 			driver=(WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		
 		
@@ -66,15 +66,12 @@ ThreadLocal<ExtentTest> th;
 	public void onTestFailure(ITestResult result) {
 	
 		try {
-			System.out.println("i am testfailur");
-			System.out.println(driver);
 			
 			
 			
 			//driver=(WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 			driver=	(WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
-			System.out.println("i am testfailur2");
-			System.out.println(driver);
+		
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

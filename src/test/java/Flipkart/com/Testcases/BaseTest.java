@@ -37,9 +37,6 @@ Properties p=new Properties();
 p.load(f);
 System.out.println(System.getProperty("Browser"));
 String drivername=System.getProperty("Browser")!=null?System.getProperty("Browser"):p.getProperty("Browser");
-System.out.println(drivername);
-//drivername="EDGEDRIVER";
-System.out.println(drivername);
 if(drivername.equalsIgnoreCase("CHROME")) {
 	System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
 	driver=new ChromeDriver();
@@ -86,8 +83,7 @@ return driver;
 }
 
 public String   getCaptureScreenShot(WebDriver driver1,String TestCaseName) {
-	System.out.println(driver1);
-	System.out.println("i am screen");
+	
 TakesScreenshot ts=(TakesScreenshot)driver1;
 File f=ts.getScreenshotAs(OutputType.FILE);
 File path= new File(System.getProperty("user.dir")+"//ScreenShots//"+TestCaseName+".png");

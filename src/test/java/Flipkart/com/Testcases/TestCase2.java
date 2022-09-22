@@ -3,7 +3,7 @@ package Flipkart.com.Testcases;
 import java.io.IOException;
 import java.util.HashMap;
 
-
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -74,7 +74,11 @@ public void AddCart() throws InterruptedException {
 	
 }
 
+@AfterMethod(alwaysRun=true )
+public void closeBrowser() throws IOException {
+	driver.close();
 
+}
 
 
 @Test

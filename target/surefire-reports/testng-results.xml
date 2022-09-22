@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="5" passed="2">
+<testng-results total="6" passed="3" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="223594" started-at="2022-09-22T12:28:50Z" finished-at="2022-09-22T12:32:34Z">
+  <suite started-at="2022-09-22T15:11:10Z" name="Suite" finished-at="2022-09-22T15:19:01Z" duration-ms="470922">
     <groups>
       <group name="Smoke">
-        <method signature="TestCase1.LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@47af7f3d]" name="LoginFinctionality" class="Flipkart.com.Testcases.TestCase1"/>
-        <method signature="TestCase2.AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@6c80d78a]" name="AddCart" class="Flipkart.com.Testcases.TestCase2"/>
+        <method signature="TestCase1.LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@6e15fe2]" name="LoginFinctionality" class="Flipkart.com.Testcases.TestCase1"/>
+        <method signature="TestCase2.AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" name="AddCart" class="Flipkart.com.Testcases.TestCase2"/>
+        <method signature="TestCase1.LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@27adc16e]" name="LoginFinctionality" class="Flipkart.com.Testcases.TestCase1"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Command line test" duration-ms="223594" started-at="2022-09-22T12:28:50Z" finished-at="2022-09-22T12:32:34Z">
+    <test started-at="2022-09-22T15:11:10Z" name="Test" finished-at="2022-09-22T15:19:01Z" duration-ms="470922">
       <class name="Flipkart.com.Testcases.TestCase1">
-        <test-method status="PASS" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@47af7f3d]" name="initiateBrowser" is-config="true" duration-ms="13415" started-at="2022-09-22T17:58:50Z" finished-at="2022-09-22T17:59:04Z">
+        <test-method is-config="true" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@6e15fe2]" started-at="2022-09-22T20:46:29Z" name="initiateBrowser" finished-at="2022-09-22T20:48:02Z" duration-ms="92833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@47af7f3d]" name="LoginFinctionality" duration-ms="3773" started-at="2022-09-22T17:59:04Z" finished-at="2022-09-22T17:59:08Z">
+        <test-method signature="LoginFinctionality()[pri:0, instance:Flipkart.com.Testcases.TestCase1@6e15fe2]" started-at="2022-09-22T20:48:02Z" name="LoginFinctionality" finished-at="2022-09-22T20:48:27Z" duration-ms="25065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFinctionality -->
-        <test-method status="PASS" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@47af7f3d]" name="initiateBrowser" is-config="true" duration-ms="42463" started-at="2022-09-22T17:59:08Z" finished-at="2022-09-22T17:59:51Z">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@6e15fe2]" started-at="2022-09-22T20:48:28Z" name="closeBrowser" finished-at="2022-09-22T20:48:29Z" duration-ms="1634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@6e15fe2]" started-at="2022-09-22T20:48:32Z" name="initiateBrowser" finished-at="2022-09-22T20:48:48Z" duration-ms="15819" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="SearchProduct(java.util.HashMap)[pri:0, instance:Flipkart.com.Testcases.TestCase1@47af7f3d]" name="SearchProduct" duration-ms="12594" started-at="2022-09-22T17:59:51Z" data-provider="getJasonData" finished-at="2022-09-22T18:00:03Z">
+        <test-method signature="SearchProduct(java.util.HashMap)[pri:0, instance:Flipkart.com.Testcases.TestCase1@6e15fe2]" started-at="2022-09-22T20:48:48Z" name="SearchProduct" data-provider="getJasonData" finished-at="2022-09-22T20:48:59Z" duration-ms="11464" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,29 +39,30 @@
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[class="_166SQN"]"}
-  (Session info: MicrosoftEdge=105.0.1343.42)
+  (Session info: chrome=105.0.5195.127)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
-System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_11'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:53948}, msedge: {msedgedriverVersion: 105.0.1343.42 (a7d028ad8493..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 385ee26f954cc03e03618842d8f8aabb
+System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf72431bd48a7a44ca0f28ea9fef617e
 *** Element info: {Using=css selector, value=input[class="_166SQN"]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[class="_166SQN"]"}
-  (Session info: MicrosoftEdge=105.0.1343.42)
+  (Session info: chrome=105.0.5195.127)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
-System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_11'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:53948}, msedge: {msedgedriverVersion: 105.0.1343.42 (a7d028ad8493..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 385ee26f954cc03e03618842d8f8aabb
+System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf72431bd48a7a44ca0f28ea9fef617e
 *** Element info: {Using=css selector, value=input[class="_166SQN"]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -69,13 +75,13 @@ Session ID: 385ee26f954cc03e03618842d8f8aabb
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
 	at flipkart_WebPages.GroceryWebPage.pincode(GroceryWebPage.java:53)
-	at Flipkart.com.Testcases.TestCase1.SearchProduct(TestCase1.java:53)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
+	at Flipkart.com.Testcases.TestCase1.SearchProduct(TestCase1.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -85,86 +91,76 @@ Session ID: 385ee26f954cc03e03618842d8f8aabb
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchProduct -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase1@6e15fe2]" started-at="2022-09-22T20:49:01Z" name="closeBrowser" finished-at="2022-09-22T20:49:01Z" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- Flipkart.com.Testcases.TestCase1 -->
       <class name="Flipkart.com.Testcases.TestCase2">
-        <test-method status="PASS" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@6c80d78a]" name="initiateBrowser" is-config="true" duration-ms="63303" started-at="2022-09-22T18:00:03Z" finished-at="2022-09-22T18:01:07Z">
+        <test-method is-config="true" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:41:10Z" name="initiateBrowser" finished-at="2022-09-22T20:43:24Z" duration-ms="133474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@6c80d78a]" name="AddCart" duration-ms="7050" started-at="2022-09-22T18:01:07Z" finished-at="2022-09-22T18:01:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddCart -->
-        <test-method status="PASS" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@6c80d78a]" name="initiateBrowser" is-config="true" duration-ms="72108" started-at="2022-09-22T18:01:14Z" finished-at="2022-09-22T18:02:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="SearchMob()[pri:0, instance:Flipkart.com.Testcases.TestCase2@6c80d78a]" name="SearchMob" duration-ms="8075" started-at="2022-09-22T18:02:26Z" finished-at="2022-09-22T18:02:34Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:43:24Z" name="AddCart" finished-at="2022-09-22T20:43:27Z" duration-ms="3144" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=105.0.1343.42)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div input[class="_2IX_2- VJZDxU"]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
-System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_11'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54206}, msedge: {msedgedriverVersion: 105.0.1343.42 (a7d028ad8493..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b321b50c10f60aed67a003b8d4f2c71]]>
+System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5923a7a34fbdb45549b5eb8542059f61
+*** Element info: {Using=css selector, value=div input[class="_2IX_2- VJZDxU"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=105.0.1343.42)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div input[class="_2IX_2- VJZDxU"]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
-System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_11'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54206}, msedge: {msedgedriverVersion: 105.0.1343.42 (a7d028ad8493..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b321b50c10f60aed67a003b8d4f2c71
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+System info: host: 'ASHWANI_SINGH', ip: '192.168.136.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ASHWAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5923a7a34fbdb45549b5eb8542059f61
+*** Element info: {Using=css selector, value=div input[class="_2IX_2- VJZDxU"]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:128)
-	at flipkart_WebPages.MobileWebPage.selectMobileCompany(MobileWebPage.java:37)
-	at Flipkart.com.Testcases.TestCase2.SearchMob(TestCase2.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at flipkart_WebPages.LoginWebPage.login(LoginWebPage.java:27)
+	at Flipkart.com.Testcases.TestCase2.AddCart(TestCase2.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -174,44 +170,58 @@ Session ID: 5b321b50c10f60aed67a003b8d4f2c71
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCart -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:43:29Z" name="closeBrowser" finished-at="2022-09-22T20:43:32Z" duration-ms="2259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:43:32Z" name="initiateBrowser" finished-at="2022-09-22T20:44:04Z" duration-ms="32857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method signature="AddCart()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:44:04Z" name="AddCart" finished-at="2022-09-22T20:44:45Z" duration-ms="40497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCart -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:44:50Z" name="closeBrowser" finished-at="2022-09-22T20:45:00Z" duration-ms="10761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="initiateBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:45:00Z" name="initiateBrowser" finished-at="2022-09-22T20:45:56Z" duration-ms="55849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method signature="SearchMob()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:45:56Z" name="SearchMob" finished-at="2022-09-22T20:46:25Z" duration-ms="28968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchMob -->
-        <test-method status="FAIL" signature="clickElectronic(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Flipkart.com.Testcases.TestCase2@6c80d78a]" name="clickElectronic" duration-ms="0" started-at="2022-09-22T18:02:34Z" finished-at="2022-09-22T18:02:34Z">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:46:25Z" name="closeBrowser" finished-at="2022-09-22T20:46:29Z" duration-ms="3702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="clickElectronic(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Flipkart.com.Testcases.TestCase2@34f6515b]" started-at="2022-09-22T20:46:29Z" name="clickElectronic" finished-at="2022-09-22T20:46:29Z" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'text' is required by @Test on method clickElectronic but has not been marked @Optional or defined
-]]>
+in D:\workspace100\FlipkartAutomation\Suites\testng.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'text' is required by @Test on method clickElectronic but has not been marked @Optional or defined
-
+in D:\workspace100\FlipkartAutomation\Suites\testng.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:355)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
@@ -223,27 +233,13 @@ Parameter 'text' is required by @Test on method clickElectronic but has not been
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.TestNGException -->
@@ -251,6 +247,6 @@ Parameter 'text' is required by @Test on method clickElectronic but has not been
           </reporter-output>
         </test-method> <!-- clickElectronic -->
       </class> <!-- Flipkart.com.Testcases.TestCase2 -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

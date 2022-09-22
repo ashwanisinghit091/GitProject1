@@ -28,7 +28,7 @@ public class MobileWebPage {
 	//By selectMobileCompany1=By.cssSelector("div[class*=\"_1AtVbE\"] div div div img:nth-child(2)");
 	public void selectMobileCompany() {
 		
-	System.out.println(selectMobileCompany.size());
+	
 		for(int i=0;i<selectMobileCompany.size();i++) {
 
 	        JavascriptExecutor js = (JavascriptExecutor) driver;

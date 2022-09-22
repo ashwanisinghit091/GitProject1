@@ -1,50 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]" parallel="none">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
   <listeners>
     <listener class-name="Flipkart.com.Listeners.Listeners"/>
   </listeners>
-  <test name="Test3(failed)" parallel="none">
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
+  <test parallel="tests" name="Test(failed)">
     <classes>
       <class name="Flipkart.com.Testcases.TestCase2">
         <methods>
+          <include name="closeBrowser"/>
           <include name="initiateBrowser"/>
           <include name="AddCart"/>
+          <include name="clickElectronic"/>
         </methods>
       </class> <!-- Flipkart.com.Testcases.TestCase2 -->
       <class name="Flipkart.com.Testcases.TestCase1">
         <methods>
-          <include name="LoginFinctionality"/>
           <include name="initiateBrowser"/>
           <include name="initiateBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="SearchProduct" invocation-numbers="0"/>
         </methods>
       </class> <!-- Flipkart.com.Testcases.TestCase1 -->
     </classes>
-  </test> <!-- Test3(failed) -->
-  <test name="Test4(failed)" parallel="none">
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="Flipkart.com.Testcases.TestCase2">
-        <methods>
-          <include name="initiateBrowser"/>
-        </methods>
-      </class> <!-- Flipkart.com.Testcases.TestCase2 -->
-      <class name="Flipkart.com.Testcases.TestCase1">
-        <methods>
-          <include name="LoginFinctionality"/>
-          <include name="initiateBrowser"/>
-          <include name="initiateBrowser"/>
-        </methods>
-      </class> <!-- Flipkart.com.Testcases.TestCase1 -->
-    </classes>
-  </test> <!-- Test4(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
