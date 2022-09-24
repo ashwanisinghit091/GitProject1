@@ -24,7 +24,7 @@ static private Logger l=LogManager.getLogger(HomeWebPage.class.getName());
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(css="div[class=\"_37M3Pb\"] :nth-child(2)[class=\"eFQ30H\"]") WebElement GroceryrWe;
+	@FindBy(css="div[class=\"_37M3Pb\"] :nth-child(9)[class=\"eFQ30H\"]") WebElement GroceryrWe;
 	@FindBy(css="div[class=\"eFQ30H\"]") List<WebElement> ChooseProductTypeWe;
 	@FindBy(css="div a[class=\"_3SkBxJ\"]") WebElement clickCartWe;
 	

@@ -40,12 +40,17 @@ public class TestCase1 extends BaseTest{
 
 	static final Logger l=LogManager.getLogger(TestCase1.class.getName());
 	
+
+	
+	
 	@Test(dataProvider= "getJasonData")
 	public void SearchProduct(HashMap<String,String> product) throws InterruptedException {
+		
 		System.out.println("testin");
 		LoginWebPageref=new LoginWebPage(driver);
 		l.debug("Checking Login Functionality");
-		HomeWebPageref=LoginWebPageref.login();
+		 HomeWebPageref=LoginWebPageref.login();
+		
 		
 		l.debug("Clicking on grocery link");
 		GroceryWebPageref=	HomeWebPageref.Grocery();
@@ -70,7 +75,7 @@ public class TestCase1 extends BaseTest{
 
 		JasonDataFile j=new JasonDataFile();
 		List<HashMap<String,String>> data1=j.getData();
-		Object data [][]={ {data1.get(0)}};
+		Object data [][]={ {data1.get(0)},{data1.get(0)},{data1.get(1)},{data1.get(2)},{data1.get(3)},{data1.get(4)},{data1.get(5)},{data1.get(6)}};
 		return 		data;
 		
 	
@@ -83,14 +88,18 @@ public class TestCase1 extends BaseTest{
 	
 	
 	@BeforeMethod(alwaysRun=true )
-	public void initiateBrowser() throws IOException {
+	public void initiateBrowser() throws IOException, InterruptedException {
 		driver=	invokeBrowser();
+		System.out.println("testin");
+		LoginWebPageref=new LoginWebPage(driver);
+		l.debug("Checking Login Functionality");
+		HomeWebPageref=LoginWebPageref.login();
 	
 	}
 	
 	
 	
-	@AfterMethod(alwaysRun=true )
+	@AfterMethod(alwaysRun=true,enabled=false )
 	public void closeBrowser() throws IOException {
 		driver.close();
 	
@@ -99,7 +108,7 @@ public class TestCase1 extends BaseTest{
 	
 	
 	
-	@Test(groups="Smoke")
+	@Test(groups="Smoke",enabled=false)
 	public void LoginFinctionality() throws InterruptedException {
 		
 		LoginWebPageref=new LoginWebPage(driver);

@@ -9,13 +9,50 @@
 
 
 [{ "Product":"Rice",
-"ProductName":"Parmal Rice (Long Grain)",
+"ProductName":"INDIA GATE Mogra Basmati Rice (Broken Grain)",
 "Quantity":"5"},
 
 
 { "Product":"Gram Masala",
 "ProductName":"Catch",
-"Quantity":"100"}]
+"Quantity":"100"},
+
+
+{ "Product":"Arhar Daal",
+"ProductName":"Tata",
+"Quantity":"2"},
+
+
+{ "Product":"Masoor Daal",
+"ProductName":"Tata",
+"Quantity":"1"},
+
+
+
+{ "Product":"Chana Daal",
+"ProductName":"Tata",
+"Quantity":"1"},
+
+{ "Product":"Kali Malka",
+"ProductName":"Tata",
+"Quantity":"500"},
+
+
+
+{ "Product":"Kala chana",
+"ProductName":"Tata",
+"Quantity":"500"},
+
+
+
+{ "Product":"Kabuli chana",
+"ProductName":"Tata",
+"Quantity":"1"},
+
+
+{ "Product":"Chitra Rajma",
+"ProductName":"Tata",
+"Quantity":"1"}]
 
 
 
@@ -26,27 +63,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-[{"Email":"ashwanis824@gmail.com",
-"Password":"Unacademy@50S",
-"FirstProductName":"ADIDAS ORIGINAL",
-"SecondProductName":"IPHONE 13 PRO"},
-
-
-{"Email":"ashwanis824@gmail.com",
-"Password":"Unacademy@50S",
-"FirstProductName":"ZARA COAT 3",
-"SecondProductName":"ADIDAS ORIGINAL"}]
 

@@ -9,19 +9,10 @@
 
   
     <classes>
-      <class name="Flipkart.com.Testcases.TestCase2"/>
+      
       <class name="Flipkart.com.Testcases.TestCase1"/>
     </classes>
   </test>
   
   
-  
-  
-  
-  <test thread-count="5" name="Test2">
-    <classes>
  
-      <class name="Flipkart.com.Testcases.TestCase1"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->

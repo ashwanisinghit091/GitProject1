@@ -27,11 +27,11 @@ WebDriver driver;
 		userName.click();
 		l.info("Clicked on username box");
 		
-		userName.sendKeys("8056100429");
+		userName.sendKeys("");
 		l.info("entered the username");
-		System.out.println("I am in3");
+		
 		password.click();
-		password.sendKeys("Pinki@50S");
+		password.sendKeys("");
 		l.info("enter the password");
 		submit.click();
 		l.info("Successfully login to homepage");
