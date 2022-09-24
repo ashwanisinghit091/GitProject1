@@ -75,7 +75,7 @@ public class TestCase1 extends BaseTest{
 
 		JasonDataFile j=new JasonDataFile();
 		List<HashMap<String,String>> data1=j.getData();
-		Object data [][]={ {data1.get(0)},{data1.get(0)},{data1.get(1)},{data1.get(2)},{data1.get(3)},{data1.get(4)},{data1.get(5)},{data1.get(6)}};
+		Object data [][]={ {data1.get(0)},{data1.get(1)}};
 		return 		data;
 		
 	
@@ -90,11 +90,7 @@ public class TestCase1 extends BaseTest{
 	@BeforeMethod(alwaysRun=true )
 	public void initiateBrowser() throws IOException, InterruptedException {
 		driver=	invokeBrowser();
-		System.out.println("testin");
-		LoginWebPageref=new LoginWebPage(driver);
-		l.debug("Checking Login Functionality");
-		HomeWebPageref=LoginWebPageref.login();
-	
+		
 	}
 	
 	
